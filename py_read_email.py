@@ -11,5 +11,5 @@ messages = ["\n".join(mssg[1]) for mssg in messages]
 #Parse message intom an email object:
 messages = [parser.Parser().parsestr(mssg) for mssg in messages]
 for message in messages:
-    print message
+    print message['Subject']
 pop_conn.quit()
